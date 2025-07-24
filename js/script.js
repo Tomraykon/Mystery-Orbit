@@ -64,7 +64,7 @@ const inventoryTitle = document.querySelector(".inventory-holder h2");
 const moneyDisplay = document.querySelector(".money-display");
 const openBoxBtn = document.getElementById("open-box-btn");
 
-// Shop items
+// Shop Items
 const shopSection = document.querySelector(".shop-section");
 
 // Cooldown Upgrade
@@ -117,13 +117,13 @@ function startPassiveIncome() {
     }, 1000);
 }
 
-// Get random item
+// Get Random Item
 function getRandomItem() {
     const index = Math.floor(Math.random() * items.length);
     return items[index];
 }
 
-// Show the newly opened card
+// Show the Opened card
 function showCard(card) {
     newCardContainer.innerHTML = "";
 
@@ -139,12 +139,12 @@ function showCard(card) {
 
     newCardContainer.appendChild(cardDiv);
 
-    // Trigger entrance animation
+    // Trigger Animation
     void cardDiv.offsetWidth;
     cardDiv.classList.remove("enter");
 }
 
-// Render inventory
+// Render Inventory
 function renderInventory() {
     inventoryContainer.innerHTML = "";
 
@@ -171,7 +171,7 @@ function renderInventory() {
     });
 }
 
-// Sell a card
+// Sell Card
 function sellCard(index) {
     const sold = inventory.splice(index, 1)[0];
     const earned = Math.round(sold.value * sellValueMultiplier);
@@ -186,7 +186,7 @@ function sellCard(index) {
     }
 }
 
-// Add card to inventory
+// Add Card to Inventory
 function addToInventory(card) {
     inventory.push(card);
 
@@ -197,7 +197,7 @@ function addToInventory(card) {
     }
 }
 
-// Handle cooldown
+// Cooldown
 function startCooldown() {
     isCooldown = true;
     openBoxBtn.disabled = true;
@@ -218,7 +218,7 @@ function startCooldown() {
     }, 1000);
 }
 
-// Handle "Open Box" click
+// "Open Envelope" click
 openBoxBtn.addEventListener("click", () => {
     if (isCooldown) return;
 

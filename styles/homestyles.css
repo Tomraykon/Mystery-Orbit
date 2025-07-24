@@ -29,6 +29,7 @@
 }
 
 /* General Styles */
+
 body {
     font-family: 'Noto Sans', sans-serif;
     background-color: var(--background-main-color);
@@ -62,6 +63,8 @@ h3 {
     letter-spacing: 1px;
 }
 
+/* Main Title Styles */
+
 .main-title {
     background-color: var(--text-main-color);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
@@ -70,6 +73,8 @@ h3 {
     text-align: center;
     margin: 0;
 }
+
+/* Homepage Styles */
 
 .homepage {
     display: flex;
@@ -83,6 +88,8 @@ h3 {
     border: 2px solid var(--rarity-gradient-epic1);
     border-radius: 8px;
 }
+
+/* Description Styles */
 
 .description1 {
     color: var(--background-secondary-color);
@@ -109,6 +116,8 @@ h3 {
     -webkit-text-fill-color: transparent;
 }
 
+/* Start Button Style */
+
 .start-btn {
     display: inline-block;
     margin-top: 40px;
@@ -129,6 +138,8 @@ h3 {
     transform: scale(1.05);
     box-shadow: 0 0 5px var(--rarity-epic);
 }
+
+/* Extra Color Styles */
 
 .basic {
     font-weight: bold;

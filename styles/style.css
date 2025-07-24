@@ -229,24 +229,25 @@ h2 {
     box-shadow: 0 0 15px var(--rarity-overkill);
 }
 
-/* Open Box Button Styles */
+/* Open Envelope Button Styles */
 #open-box-btn {
     display: block;
     margin: 20px auto;
-    background-color: var(--rarity-rare);
-    color: var(--text-main-color);
-    border: none;
+    background: linear-gradient(0deg, var(--rarity-gradient-rare1), var(--rarity-gradient-rare2));
+    color: var(--background-secondary-color);
+    border: 2px solid var(--rarity-rare);
     padding: 12px 24px;
     font-size: 30px;
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.1s ease, transform 0.1s ease, color 0.1s ease;
+    transition: transform 0.1s ease, color 0.1s ease;
 }
 
 #open-box-btn:hover {
     color: var(--background-secondary-color);
-    background-color: var(--rarity-epic);
+    background: linear-gradient(180deg, var(--rarity-rare), var(--rarity-gradient-rare1));
+    box-shadow: 0 0 8px var(--rarity-rare);
     transform: scale(1.1);
 }
 
@@ -286,7 +287,7 @@ h2 {
     gap: 12px;
 }
 
-/* Smaller inventory cards */
+/* Smaller Inventory Cards */
 .inventory-container .card {
     width: 140px;
     height: 200px;
@@ -303,7 +304,7 @@ h2 {
     transform: scale(1.05);
 }
 
-/* Hover effects by rarity */
+/* Hover Effects by Card Rarity */
 .inventory-container .basic:hover {
     border: 3px solid var(--rarity-basic);
     box-shadow: 0 0 5px var(--rarity-basic);
@@ -333,7 +334,6 @@ h2 {
     border: 3px solid var(--rarity-overkill);
     box-shadow: 0 0 5px var(--rarity-overkill);
 }
-
 
 .inventory-container .symbol-img {
     width: 70px;
@@ -369,16 +369,17 @@ h2 {
     padding: 6px 12px;
     font-size: 14px;
     font-weight: bold;
-    background-color: var(--background-main-color);
+    background: linear-gradient(0deg, var(--rarity-gradient-overkill1), var(--rarity-gradient-overkill2));
     color: var(--background-secondary-color);
-    border: none;
+    border: 2px solid var(--rarity-overkill);
     border-radius: 2px;
     cursor: pointer;
     transition: background-color 0.1s ease, transform 0.1s ease;
 }
 
 .sell-btn:hover {
-    background-color: var(--rarity-overkill);
+    background: linear-gradient(180deg, var(--rarity-overkill), var(--rarity-gradient-overkill2));
+    box-shadow: 0 0 3px var(--rarity-overkill);
     transform: scale(1.05);
 }
 
@@ -418,8 +419,8 @@ h2 {
 #buy-sell-btn:hover,
 #buy-passive-btn:hover {
     background: linear-gradient(180deg, var(--money), var(--money-gradient1));
-    border: 2px solid var(--money-gradient2);
-    color: var(--text-main-color);
+    color: var(--background-secondary-color);
+    box-shadow: 0 0 3px var(--money);
 }
 
 #buy-cooldown-btn:disabled,
