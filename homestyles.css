@@ -1,0 +1,170 @@
+/* Color Variables */
+:root {
+    --background-main-color: #0A0F1F;
+    --background-main-gradient: #2A0E46;
+    --background-secondary-color: #E5EAFA;
+    --background-third-color: #1C0930;
+    --text-main-color: #111111;
+    --rarity-basic: #9FA6B2;
+    --rarity-gradient-basic1: #666D77;
+    --rarity-gradient-basic2: #494F59;
+    --rarity-normal: #7B9ACC;
+    --rarity-gradient-normal1: #4A6596;
+    --rarity-gradient-normal2: #334871;
+    --rarity-rare: #6C5CE7;
+    --rarity-gradient-rare1: #4838A3;
+    --rarity-gradient-rare2: #2F217D;
+    --rarity-epic: #AE47F0;
+    --rarity-gradient-epic1: #7623AA;
+    --rarity-gradient-epic2: #59178B;
+    --rarity-mythic: #F2C94C;
+    --rarity-gradient-mythic1: #B8922A;
+    --rarity-gradient-mythic2: #A07D08;
+    --rarity-overkill: #800020;
+    --rarity-gradient-overkill1: #660026;
+    --rarity-gradient-overkill2: #33000F;
+    --money: #4CAF50;
+    --money-gradient1: #0B1A0E;
+    --money-gradient2: #112D1B;
+}
+
+/* General Styles */
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: var(--background-main-color);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 15rem;
+    color: var(--rarity-epic);
+    text-align: center;
+    margin: 30px 0 -70px;
+    letter-spacing: 5px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--background-secondary-color);
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 2rem;
+    color: var(--rarity-rare);
+    margin: 20px 0 10px 0;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.main-title {
+    background-color: var(--text-main-color);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    color: var(--background-main-color);
+    padding: 40px 20px;
+    text-align: center;
+    margin: 0;
+}
+
+.homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 70vw;
+    margin: 80px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, var(--background-main-color), var(--background-third-color));
+    border: 2px solid var(--rarity-gradient-epic1);
+    border-radius: 8px;
+}
+
+.description1 {
+    color: var(--background-secondary-color);
+    max-width: 40vw;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.holder-description1 h3 {
+    font-family: 'Anton', sans-serif;
+    color: var(--background-secondary-color);
+    font-size: 56px;
+    letter-spacing: 2px;
+    background: linear-gradient(180deg, var(--background-secondary-color), var(--rarity-normal));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.holder-description1 .gradient-epic {
+    background: linear-gradient(180deg, var(--rarity-epic), var(--rarity-gradient-epic2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.start-btn {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 15px 40px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background: linear-gradient(0deg, var(--background-third-color), var(--rarity-gradient-epic2));
+    color: var(--background-secondary-color);
+    text-decoration: none;
+    border-radius: 4px;
+    border: 2px solid var(--rarity-epic);
+    transition: all 0.2s ease;
+}
+
+.start-btn:hover {
+    background: linear-gradient(270deg, var(--rarity-gradient-epic2), var(--background-third-color));
+    color: var(--background-secondary-color);
+    transform: scale(1.05);
+    box-shadow: 0 0 5px var(--rarity-epic);
+}
+
+.basic {
+    font-weight: bold;
+    color: var(--rarity-basic);
+}
+
+.normal {
+    font-weight: bold;
+    color: var(--rarity-normal);
+}
+
+.rare {
+    font-weight: bold;
+    color: var(--rarity-rare);
+}
+
+.epic {
+    font-weight: bold;
+    color: var(--rarity-epic);
+}
+
+.mythic {
+    font-weight: bold;
+    color: var(--rarity-mythic);
+}
+
+.overkill {
+    font-weight: bold;
+    color: var(--rarity-overkill);
+}
+
+.money {
+    font-weight: bold;
+    color: var(--money);
+}
+
+.final-span {
+    font-size: 12px;
+}

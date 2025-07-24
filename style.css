@@ -1,0 +1,431 @@
+/* Color Variables */
+:root {
+    --background-main-color: #0A0F1F;
+    --background-main-gradient: #2A0E46;
+    --background-secondary-color: #E5EAFA;
+    --background-third-color: #1C0930;
+    --text-main-color: #111111;
+    --rarity-basic: #9FA6B2;
+    --rarity-gradient-basic1: #666D77;
+    --rarity-gradient-basic2: #494F59;
+    --rarity-normal: #7B9ACC;
+    --rarity-gradient-normal1: #4A6596;
+    --rarity-gradient-normal2: #334871;
+    --rarity-rare: #6C5CE7;
+    --rarity-gradient-rare1: #4838A3;
+    --rarity-gradient-rare2: #2F217D;
+    --rarity-epic: #AE47F0;
+    --rarity-gradient-epic1: #7623AA;
+    --rarity-gradient-epic2: #59178B;
+    --rarity-mythic: #F2C94C;
+    --rarity-gradient-mythic1: #B8922A;
+    --rarity-gradient-mythic2: #A07D08;
+    --rarity-overkill: #800020;
+    --rarity-gradient-overkill1: #660026;
+    --rarity-gradient-overkill2: #33000F;
+    --money: #4CAF50;
+    --money-gradient1: #0B1A0E;
+    --money-gradient2: #112D1B;
+}
+
+/* General Styles */
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: var(--background-main-color);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 5rem;
+    color: var(--rarity-epic);
+    text-align: center;
+    margin: 30px 0 20px;
+    letter-spacing: 5px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--background-secondary-color);
+    margin: 25px 0 15px 0;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+/* Card Styles */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.new-card-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    min-height: 420px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    width: 100%;
+}
+
+.card {
+    width: 250px;
+    height: 400px;
+    border-radius: 5px;
+    background: var(--background-secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: var(--text-main-color);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.5s ease, box-shadow 0.1s ease, border 0.1s ease;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+    border: 5px solid transparent;
+}
+
+.card.enter {
+    opacity: 0;
+    transform: scale(0.2);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px var(--rarity-epic);
+}
+
+.symbol-img {
+    width: 150px;
+    height: 150px;
+}
+
+.name {
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* Rarity Styles */
+.rarity {
+    font-family: 'Anton', sans-serif;
+    font-size: 27px;
+    margin-top: auto;
+    margin-bottom: 20px;
+    color: var(--text-main-color);
+}
+
+.basic .rarity {
+    background-color: var(--rarity-basic);
+    border-radius: 5px;
+    border: 2px solid var(--text-main-color);
+    padding: 1px 8px;
+}
+
+.normal .rarity {
+    background-color: var(--rarity-normal);
+    border-radius: 5px;
+    border: 2px solid var(--text-main-color);
+    padding: 1px 8px;
+}
+
+.rare .rarity {
+    background-color: var(--rarity-rare);
+    border-radius: 5px;
+    border: 2px solid var(--text-main-color);
+    padding: 1px 8px;
+}
+
+.epic .rarity {
+    background-color: var(--rarity-epic);
+    border-radius: 5px;
+    border: 2px solid var(--text-main-color);
+    padding: 1px 8px;
+}
+
+.mythic .rarity {
+    background-color: var(--rarity-mythic);
+    border-radius: 5px;
+    border: 2px solid var(--text-main-color);
+    padding: 1px 8px;
+}
+
+.overkill .rarity {
+    background-color: var(--rarity-overkill);
+    border-radius: 5px;
+    border: 2px solid var(--text-main-color);
+    padding: 1px 8px;
+}
+
+.basic {
+    background: linear-gradient(120deg, var(--rarity-gradient-basic1), var(--rarity-gradient-basic2));
+    border-color: transparent;
+}
+
+.normal {
+    background: linear-gradient(120deg, var(--rarity-gradient-normal1), var(--rarity-gradient-normal2));
+    border-color: transparent;
+}
+
+.rare {
+    background: linear-gradient(120deg, var(--rarity-gradient-rare1), var(--rarity-gradient-rare2));
+    border-color: transparent;
+}
+
+.epic {
+    background: linear-gradient(120deg, var(--rarity-gradient-epic1), var(--rarity-gradient-epic2));
+    border-color: transparent;
+}
+
+.mythic {
+    background: linear-gradient(120deg, var(--rarity-gradient-mythic1), var(--rarity-gradient-mythic2));
+    border-color: transparent;
+}
+
+.overkill {
+    background: linear-gradient(120deg, var(--rarity-gradient-overkill1), var(--rarity-gradient-overkill2));
+    border-color: transparent;
+}
+
+.basic:hover {
+    border: 5px solid var(--rarity-basic);
+    box-shadow: 0 0 15px var(--rarity-basic);
+}
+
+.normal:hover {
+    border: 5px solid var(--rarity-normal);
+    box-shadow: 0 0 15px var(--rarity-normal);
+}
+
+.rare:hover {
+    border: 5px solid var(--rarity-rare);
+    box-shadow: 0 0 15px var(--rarity-rare);
+}
+
+.epic:hover {
+    border: 5px solid var(--rarity-epic);
+    box-shadow: 0 0 15px var(--rarity-epic);
+}
+
+.mythic:hover {
+    border: 5px solid var(--rarity-mythic);
+    box-shadow: 0 0 15px var(--rarity-mythic);
+}
+
+.overkill:hover {
+    border: 5px solid var(--rarity-overkill);
+    box-shadow: 0 0 15px var(--rarity-overkill);
+}
+
+/* Open Box Button Styles */
+#open-box-btn {
+    display: block;
+    margin: 20px auto;
+    background-color: var(--rarity-rare);
+    color: var(--text-main-color);
+    border: none;
+    padding: 12px 24px;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.1s ease, transform 0.1s ease, color 0.1s ease;
+}
+
+#open-box-btn:hover {
+    color: var(--background-secondary-color);
+    background-color: var(--rarity-epic);
+    transform: scale(1.1);
+}
+
+/* Inventory Styles */
+
+.inventory-holder h2 {
+    color: var(--rarity-epic);
+}
+
+.inventory-holder {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50vh;
+    height: 80vh;
+    background: linear-gradient(60deg, var(--background-main-color), var(--background-third-color));
+    border: 2px solid var(--background-main-gradient);
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inventory-container {
+    max-width: 500px;
+    max-height: 80vh;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 0 auto 40px;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+/* Smaller inventory cards */
+.inventory-container .card {
+    width: 140px;
+    height: 200px;
+    padding: 10px;
+    gap: 6px;
+    transition: transform 0.1s ease;
+}
+
+.inventory-container .card {
+    border: 3px solid transparent;
+}
+
+.inventory-container .card:hover {
+    transform: scale(1.05);
+}
+
+/* Hover effects by rarity */
+.inventory-container .basic:hover {
+    border: 3px solid var(--rarity-basic);
+    box-shadow: 0 0 5px var(--rarity-basic);
+}
+
+.inventory-container .normal:hover {
+    border: 3px solid var(--rarity-normal);
+    box-shadow: 0 0 5px var(--rarity-normal);
+}
+
+.inventory-container .rare:hover {
+    border: 3px solid var(--rarity-rare);
+    box-shadow: 0 0 5px var(--rarity-rare);
+}
+
+.inventory-container .epic:hover {
+    border: 3px solid var(--rarity-epic);
+    box-shadow: 0 0 10px var(--rarity-epic);
+}
+
+.inventory-container .mythic:hover {
+    border: 3px solid var(--rarity-mythic);
+    box-shadow: 0 0 5px var(--rarity-mythic);
+}
+
+.inventory-container .overkill:hover {
+    border: 3px solid var(--rarity-overkill);
+    box-shadow: 0 0 5px var(--rarity-overkill);
+}
+
+
+.inventory-container .symbol-img {
+    width: 70px;
+    height: 70px;
+}
+
+.inventory-container .name {
+    font-size: 25px;
+}
+
+.inventory-container .rarity {
+    font-size: 18px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Money */
+.money-display {
+    color: var(--money);
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.sell-btn {
+    margin-top: 8px;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: var(--background-main-color);
+    color: var(--background-secondary-color);
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.1s ease, transform 0.1s ease;
+}
+
+.sell-btn:hover {
+    background-color: var(--rarity-overkill);
+    transform: scale(1.05);
+}
+
+/* Shop Section */
+.shop-section {
+    text-align: center;
+    margin-top: 40px;
+    color: var(--background-secondary-color);
+}
+
+.shop-item {
+    background: linear-gradient(180deg, var(--background-main-color), var(--background-third-color));
+    padding: 20px;
+    border: 2px solid var(--background-main-gradient);
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#buy-cooldown-btn,
+#buy-sell-btn,
+#buy-passive-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(0deg, var(--money-gradient1), var(--money-gradient2));
+    border: 2px solid var(--money);
+    color: var(--background-secondary-color);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.1s ease;
+}
+
+#buy-cooldown-btn:hover,
+#buy-sell-btn:hover,
+#buy-passive-btn:hover {
+    background: linear-gradient(180deg, var(--money), var(--money-gradient1));
+    border: 2px solid var(--money-gradient2);
+    color: var(--text-main-color);
+}
+
+#buy-cooldown-btn:disabled,
+#buy-sell-btn:disabled,
+#buy-passive-btn:disabled {
+    background: linear-gradient(90deg, var(--rarity-gradient-basic1), var(--rarity-gradient-basic2));
+    color: var(--text-main-color);
+    border: 2px solid var(--background-main-color);
+}

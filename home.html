@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Toastify CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="./homestyles.css" />
+
+    <title>Mystery Orbit - MO</title>
+</head>
+
+<body>
+
+    <div class="main-title">
+        <h1>MYSTERY ORBIT</h1>
+        <h2>BIENVENIDO A MI PROYECTO FINAL DE <strong>CODERHOUSE</strong>.</h2>
+        <h3><strong>POR FAVOR LEER TODO.</strong></h3>
+    </div>
+
+    <main class="homepage">
+
+        <div class="holder-description1">
+            <h3>¿QUÉ QUIERO DEMOSTRAR?</h3>
+            <p class="description1">
+                Con esta simulación busco reflejar todo lo que aprendi aen elcurso,
+                aplicando de forma concreta los conceptos más importantes de JavaScript. Tambien, quise darle un toque
+                más creativo, integrando mecánicas que se usan en situaciones reales, como compras, tiempos de espera,
+                una economía dinámica y generación de contenido para HTML desde el código. Es mi forma de demostrar que
+                entiendo la teoría, y que puedo aplicarla en un proyecto funcional real.
+                <br>
+                <strong class="epic">PD:</strong> Hice todo en ingles porque me gusta usar mas ese idioma cuando programo, porque como el idioma de programacion ya de por si es en ingles, me resulta mas facil para ir pensando todo mientras programo.
+            </p>
+        </div>
+
+        <div class="holder-description1">
+            <h3>¿CUMPLÍ CON LA CONSIGNA?</h3>
+            <p class="description1">
+                Sí, mi proyecto cumple con todo lo que pedía la consigna del simulador final. Hice un videojuego
+                interactivo llamado <span class="epic">MYSTERY ORBIT</span>, donde el jugador puede abrir sobres,
+                coleccionar cartas, venderlas, y usar el dinero de las cartas para mejorar distintas cosas como el valor
+                de venta, reducir el tiempo de espera y generar ingresos pasivos.
+
+                <br><br>
+                <strong class="epic">Simulación y lógica de negocio:</strong> Hay un sistema completo de economía:
+                abriendo los sobres podés vender cartas que te tocan de manera al azar, mejorar cosas y generar plata
+                automáticamente. Usando una logica funcional que puede aplicarse a la realidad.
+
+                <br><br>
+                <strong class="epic">HTML generado desde JS:</strong> Todas las cartas, mejoras y parte de la tienda se
+                generan dinámicamente con JavaScript.
+
+                <br><br>
+                <strong class="epic">Uso de arrays, objetos, funciones y eventos:</strong> Cada carta es un objeto con
+                propiedades, las upgrades usan arrays, se recorren, se agregan eventos, y todo se controla con funciones
+                bien divididas.
+
+                <br><br>
+                <strong class="epic">JSON simulado:</strong> Los datos están organizados como si fueran un JSON,
+                simulando una base de datos con los objetos de las cartas.
+
+                <br><br>
+                <strong class="epic">Interactividad completa:</strong> El jugador puede hacer acciones, ver resultados
+                en pantalla en tiempo real, usar mejoras, y hay efectos visuales con animaciones y notificaciones.
+
+                <br><br>
+                <strong class="epic">Sin console.log ni alerts:</strong> Eliminé los console.log y en vez de usar alert
+                o prompt, implementé <strong><code>Toastify</code></strong> y <strong><code>SweetAlert2</code></strong>.
+
+                <br><br>
+                <strong class="epic">Archivos separados:</strong> El HTML está limpio, el CSS bien organizado, y todo el
+                JavaScript en su archivo correspondiente.
+
+                <br><br>
+                <strong class="epic">En resumen:</strong> me enfoqué en hacer algo divertido y completo, pero que
+                también demuestre que entiendo cómo
+                usar JavaScript para construir algo dinámico, con lógica, eventos, y buena estructura.
+            </p>
+        </div>
+
+        <div class="holder-description1">
+            <h3 class="gradient-epic">¿COMO JUGAR?</h3>
+            <p class="description1">
+                Abres un sobre con el boton "Open Envelope", te toca una carta al azar que se va a agregar a tu inventario.
+                las cartas estan categorizadas por diferentes rarezas: <strong class="basic">BASIC</strong> <strong class="normal">NORMAL</strong> <strong class="rare">RARE</strong> <strong class="epic">EPIC</strong> <strong class="mythic">MYTHIC</strong> y <strong class="overkill">OVERKILL</strong> siendo esta ultima la mas rara de encontrar. cada carta tiene un nombre diferente y un valor de venta diferente, hay un total de 18 cartas. 5 de ellas son de la rareza <strong class="basic">BASIC</strong>, 4 de la rareza <strong class="normal">NORMAL</strong>, 3 de la rareza <strong class="rare">RARE</strong>, 3 de la rareza <strong class="epic">EPIC</strong>, 2 de la rareza <strong class="mythic">MYTHIC</strong> y 1 de la rareza <strong class="overkill">OVERKILL</strong>. Las cartas se pueden vender, y usar el dinero para comprar mejoras que te permiten aumentar el valor de venta de las cartas, reducir el tiempo de espera para abrir sobres, y generar ingresos pasivos. Las mejoras se compran en la tienda, cada mejora tiene un precio diferente y algunas pueden cambiar de precio dependiendo del nivel de la mejora. Por ejemplo, la mejora de valor de venta aumenta el valor de venta de las cartas en un 10% por cada nivel, pero el precio de la mejora aumenta un 50% por cada nivel. 
+                <br>
+                <strong>Disfruta de este simulador de juego Basico hecho con JavaScript programado por Kevin Tomé. Gracias por su atencion</strong>
+                <br>
+                <span class="final-span">Si dentro del juego tecleas <strong class="money">"M-O-N-E-Y"</strong> activaras un truco oculto.</span>
+            </p>
+        </div>
+
+        <a href="index.html" class="start-btn">Start Game</a>
+    </main>
+
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Toastify JS -->
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- Your JS -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
