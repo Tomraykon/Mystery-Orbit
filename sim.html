@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Toastify CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Mystery Orbit - MO</title>
+</head>
+
+<body>
+    <main>
+
+        <h1>MYSTERY ORBIT</h1>
+        <h2>Open an Envelope and Collect Your Card!</h2>
+
+        <div class="money-display">$0</div>
+
+        <!-- Button to Open Box -->
+        <button id="open-box-btn">Open Envelope</button>
+
+        <!-- Container for Cards -->
+        <section class="new-card-container"></section>
+
+        <!-- Inventory -->
+        <section class="inventory-holder hidden">
+            <h2>YOUR INVENTORY</h2>
+            <!-- Container for Inventory Items -->
+            <section class="inventory-container cards-container hidden"></section>
+        </section>
+
+        <section class="shop-section">
+            <h2>SHOP</h2>
+        </section>
+
+
+    </main>
+
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Toastify JS -->
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- Your JS -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
