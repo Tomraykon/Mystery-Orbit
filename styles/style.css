@@ -418,7 +418,7 @@ h2 {
 #buy-cooldown-btn:hover,
 #buy-sell-btn:hover,
 #buy-passive-btn:hover {
-    background: linear-gradient(180deg, var(--money), var(--money-gradient1));
+    background: linear-gradient(180deg, var(--money-gradient1), var(--money));
     color: var(--background-secondary-color);
     box-shadow: 0 0 3px var(--money);
 }

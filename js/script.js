@@ -39,7 +39,7 @@ let money = 0;
 let cooldownBase = 30;
 let cooldownReduction = 0;
 let cooldownUpgradeCount = 0;
-const maxCooldownUpgrades = 4;
+const maxCooldownUpgrades = 5;
 const cooldownItemPrice = 100;
 
 // Sell Value Upgrade
@@ -184,10 +184,16 @@ function renderInventory() {
       </div>
     `;
 
-        cardDiv.querySelector(".sell-btn").addEventListener("click", () => {
+        const sellBtn = cardDiv.querySelector(".sell-btn");
+
+        sellBtn.addEventListener("click", () => {
             sellCard(index);
         });
 
+        sellBtn.addEventListener("mouseenter", () => {
+            hoverSounds[0].currentTime = 0;
+            hoverSounds[0].play();
+        });
         inventoryContainer.appendChild(cardDiv);
     });
 }
@@ -279,7 +285,7 @@ buyCooldownBtn.addEventListener("click", () => {
     cooldownUpgradeCount++;
     cooldownReduction += 5;
     updateMoneyDisplay();
-    cooldownLvDisplay.textContent = `(Lv ${cooldownUpgradeCount >= 4 ? "MAX" : cooldownUpgradeCount})`;
+    cooldownLvDisplay.textContent = `(Lv ${cooldownUpgradeCount >= 5 ? "MAX" : cooldownUpgradeCount})`;
 
     Toastify({
         text: `Cooldown reduced by 5s!`,
