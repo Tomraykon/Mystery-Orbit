@@ -1,1 +1,2 @@
 # Mystery-Orbit
+POR FAVOR LEER LO DE LA PAGINA
