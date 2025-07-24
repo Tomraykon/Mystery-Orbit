@@ -103,6 +103,27 @@ const cooldownLvDisplay = document.getElementById("cooldown-lv");
 const passiveLvDisplay = document.getElementById("passive-lv");
 const passiveRateDisplay = document.getElementById("passive-rate");
 
+// Sounds
+const openSounds = [
+    new Audio('../assets/sounds/unfold1.wav'),
+    new Audio('../assets/sounds/unfold2.wav'),
+    new Audio('../assets/sounds/unfold3.wav'),
+    new Audio('../assets/sounds/unfold4.wav'),
+];
+
+const hoverSounds = [
+    new Audio('../assets/sounds/buttonhover.wav')
+];
+
+// Play Random Open Sound
+function playRandomOpenSound() {
+    const randomIndex = Math.floor(Math.random() * openSounds.length);
+    const sound = openSounds[randomIndex];
+
+    sound.currentTime = 0;
+    sound.play();
+}
+
 // Update displayed money
 function updateMoneyDisplay() {
     moneyDisplay.textContent = `$${money}`;
@@ -221,6 +242,8 @@ function startCooldown() {
 // "Open Envelope" click
 openBoxBtn.addEventListener("click", () => {
     if (isCooldown) return;
+
+    playRandomOpenSound();
 
     const item = getRandomItem();
     showCard(item);
@@ -369,4 +392,13 @@ document.addEventListener("keydown", (e) => {
 
         cheatSequence = [];
     }
+});
+
+// Button Hover Sound
+const allButtons = document.querySelectorAll("button");
+allButtons.forEach(btn => {
+    btn.addEventListener("mouseenter", () => {
+        hoverSounds[0].currentTime = 0;
+        hoverSounds[0].play();
+    });
 });
