@@ -1,34 +1,34 @@
 // Array of Items With Rarity, Symbol and Value
 const items = [
     // Basic rarity
-    { name: "Zephyr", rarity: "basic", symbol: "./assets/basic1.svg", value: 5 },
-    { name: "Ember", rarity: "basic", symbol: "./assets/basic2.svg", value: 10 },
-    { name: "Quartz", rarity: "basic", symbol: "./assets/basic3.svg", value: 15 },
-    { name: "Ripple", rarity: "basic", symbol: "./assets/basic4.svg", value: 20 },
-    { name: "Glint", rarity: "basic", symbol: "./assets/basic5.svg", value: 30 },
+    { name: "Zephyr", rarity: "basic", symbol: "../assets/basic1.svg", value: 5 },
+    { name: "Ember", rarity: "basic", symbol: "../assets/basic2.svg", value: 10 },
+    { name: "Quartz", rarity: "basic", symbol: "../assets/basic3.svg", value: 15 },
+    { name: "Ripple", rarity: "basic", symbol: "../assets/basic4.svg", value: 20 },
+    { name: "Glint", rarity: "basic", symbol: "../assets/basic5.svg", value: 30 },
 
     // Normal rarity
-    { name: "Vortex", rarity: "normal", symbol: "./assets/normal1.svg", value: 50 },
-    { name: "Halo", rarity: "normal", symbol: "./assets/normal2.svg", value: 60 },
-    { name: "Strider", rarity: "normal", symbol: "./assets/normal3.svg", value: 75 },
-    { name: "Pulse", rarity: "normal", symbol: "./assets/normal4.svg", value: 85 },
+    { name: "Vortex", rarity: "normal", symbol: "../assets/normal1.svg", value: 50 },
+    { name: "Halo", rarity: "normal", symbol: "../assets/normal2.svg", value: 60 },
+    { name: "Strider", rarity: "normal", symbol: "../assets/normal3.svg", value: 75 },
+    { name: "Pulse", rarity: "normal", symbol: "../assets/normal4.svg", value: 85 },
 
     // Rare rarity
-    { name: "Specter", rarity: "rare", symbol: "./assets/rare1.svg", value: 90 },
-    { name: "Aether", rarity: "rare", symbol: "./assets/rare2.svg", value: 100 },
-    { name: "Cinder", rarity: "rare", symbol: "./assets/rare3.svg", value: 120 },
+    { name: "Specter", rarity: "rare", symbol: "../assets/rare1.svg", value: 90 },
+    { name: "Aether", rarity: "rare", symbol: "../assets/rare2.svg", value: 100 },
+    { name: "Cinder", rarity: "rare", symbol: "../assets/rare3.svg", value: 120 },
 
     // Epic rarity
-    { name: "Nova", rarity: "epic", symbol: "./assets/epic1.svg", value: 150 },
-    { name: "Phantom", rarity: "epic", symbol: "./assets/epic2.svg", value: 200 },
-    { name: "X-Overlord", rarity: "epic", symbol: "./assets/epic3.svg", value: 250 },
+    { name: "Nova", rarity: "epic", symbol: "../assets/epic1.svg", value: 150 },
+    { name: "Phantom", rarity: "epic", symbol: "../assets/epic2.svg", value: 200 },
+    { name: "X-Overlord", rarity: "epic", symbol: "../assets/epic3.svg", value: 250 },
 
     // Mythic rarity
-    { name: "Oblivion", rarity: "mythic", symbol: "./assets/mythic1.svg", value: 350 },
-    { name: "Eclipse Prime", rarity: "mythic", symbol: "./assets/mythic2.svg", value: 400 },
+    { name: "Oblivion", rarity: "mythic", symbol: "../assets/mythic1.svg", value: 350 },
+    { name: "Eclipse Prime", rarity: "mythic", symbol: "../assets/mythic2.svg", value: 400 },
 
     // Overkill rarity
-    { name: "Cataclysm", rarity: "overkill", symbol: "./assets/overkill1.svg", value: 1000 }
+    { name: "Cataclysm", rarity: "overkill", symbol: "../assets/overkill1.svg", value: 1000 }
 ];
 
 // Initial state
