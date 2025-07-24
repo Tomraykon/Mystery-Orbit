@@ -212,7 +212,7 @@ function startCooldown() {
         if (secondsLeft <= 0) {
             clearInterval(interval);
             openBoxBtn.disabled = false;
-            openBoxBtn.textContent = "Open Box";
+            openBoxBtn.textContent = "Open Envelope";
             isCooldown = false;
         }
     }, 1000);
